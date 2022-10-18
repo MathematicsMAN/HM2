@@ -56,10 +56,22 @@
 
 
 
+# n = int(input(" Введите число n "))
+# sum = 1
+# i = 1
+# while sum < n:
+#     print(sum, end=" ")
+#     sum = 2 ** i
+#     i += 1
+
+
+
 n = int(input(" Введите число n "))
-sum = 1
-i = 1
-while sum < n:
-    print(sum)
-    sum = 2 ** i
-    i += 1
+a = n // 2
+for i in range(2 , a):
+    if n % i == 0:
+        print(0)
+        break
+else:
+    print(1)
+
