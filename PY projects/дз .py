@@ -66,12 +66,24 @@
 
 
 
-n = int(input(" Введите число n "))
-a = n // 2
-for i in range(2 , a):
-    if n % i == 0:
-        print(0)
-        break
-else:
-    print(1)
+# n = int(input(" Введите число n "))
+# a = n // 2
+# i = 2
+# while i <= a:
+#     if n % i == 0:
+#         print(0)
+#         break
+#     i += 1
+# else:
+#     print(1)
+
+
+
+
+a = int(input(" Введите число a "))
+b = int(input(" Введите число b "))
+s = 0
+for i in range(1,a + 1):
+    s += i ** b
+print(s)
 
