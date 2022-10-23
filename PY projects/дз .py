@@ -80,10 +80,35 @@
 
 
 
-a = int(input(" Введите число a "))
-b = int(input(" Введите число b "))
-s = 0
-for i in range(1,a + 1):
-    s += i ** b
-print(s)
+# a = int(input(" Введите число a "))
+# b = int(input(" Введите число b "))
+# s = 0
+# for i in range(1,a + 1):
+#     s += i ** b
+# print(s)
+
+
+
+# товары = []
+# count = int(input(" Введите количество товаров списка "))
+# for i in range(count):
+#     товары.append(input(" Имя товара "))
+# for a in товары:
+#     print(a)
+
+
+
+
+
+n = int(input(' Введите количество элементов списка '))
+list1 = []
+for i in range(n):
+    a = int(input(f' Введите число {i + 1} '))
+    list1.append(a)
+b = 0
+for a in list1:
+    b += a
+f = b /  n
+print(f)
+
 
