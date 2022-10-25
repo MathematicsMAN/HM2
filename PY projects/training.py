@@ -20,14 +20,17 @@
 # print(j + l + v)
 
 
-j = 0
-for i in range(3):
-    a = int(input("Введите число: "))
-    if a < 0:
-        j += 1
-print(f'Число отрицательных чисел: {j}')
+# j = 0
+# for i in range(3):
+#     a = int(input("Введите число: "))
+#     if a < 0:
+#         j += 1
+# print(f'Число отрицательных чисел: {j}')
 
 
 
+a = list[1,2,3,4]
+a = list[1] = 58
+print(a)
 
 

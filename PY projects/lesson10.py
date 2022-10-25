@@ -65,11 +65,88 @@
 
 
 
-n = int(input(" Введите число n "))
-x = float(input(" Введите число  x "))
-s = 1
-t = 1
-for i in range(1,n + 1):
-    t = t * x / i
-    s += t
-print(s)
+# n = int(input(" Введите число n "))
+# x = float(input(" Введите число  x "))
+# s = 1
+# t = 1
+# for i in range(1,n + 1):
+#     t = t * x / i
+#     s += t
+# print(s)
+
+
+
+
+
+# a = []
+# n = 3
+# for i in range(n):
+#     a.append(input(" Введите число "))
+# print(a[0],a[-1])
+
+
+
+# a = int(input(" Введите число a "))
+# b = []
+# for i in range(a * 2 + 1):
+#     if i % 2 != 0:
+#         b.append(i)
+# print(b)
+
+
+
+# a = []
+# n = 4
+# for i in range(n):
+#     a.append(int(input(" Введите число ")))
+# print(int(sum(a) / n))
+
+
+
+
+
+# var = 'python in skysmart'
+# a = var.split("-")
+# print(a)
+
+
+
+
+
+# n = int(input(' Введите количество элементов списка '))
+# list1 = []
+# for i in range(n):
+#     a = int(input(f' Введите число {i + 1} '))
+#     list1.append(a)
+# m = max(list1)
+# print(m)
+
+
+
+
+# n = int(input(' Введите количество элементов списка '))
+# list1 = []
+# for i in range(n):
+#     a = int(input(f' Введите число {i + 1} '))
+#     list1.append(a)
+# list2 = []
+# for a in list1:
+#      if a % 2 == 1:
+#          list2.append(a)
+# b = min(list2) if len(list2) > 0 else 0
+# print(b)
+
+
+
+n = int(input(' Введите количество элементов списка '))
+list1 = []
+for i in range(n):
+    a = int(input(f' Введите число {i + 1} '))
+    list1.append(a)
+count = 0
+for i in range (n - 1):
+    a = list1[i]
+    for j in range(i + 1,n):
+        if a == list1[j]:
+            count += 1
+print(count)
