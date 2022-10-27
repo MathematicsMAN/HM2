@@ -114,15 +114,17 @@
 
 
 
-
-
-
 s = input(' Введите текст ')
-res =""
+res = ""
 for i in range(len(s)):
     a = s[i]
-    b = ord('a')
+    b = ord(a)
     b += 13
-    c = chr(b)
-    res += c
+    if b > ord('z'):
+        b += ord('z')
+        b = chr(b)
+        res += b
+    else:
+        c = chr(b)
+        res += c
 print(res)
